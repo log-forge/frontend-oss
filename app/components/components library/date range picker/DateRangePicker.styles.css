@@ -1,0 +1,82 @@
+.rdp-root {
+  --rdp-accent-color: var(--color-accent); /* Change the accent color to indigo. */
+  --rdp-accent-background-color: color-mix(in oklab, var(--color-highlight) 20%, transparent); /* Change the accent background color. */
+  --rdp-day-height: var(--spacing-lg);
+  --rdp-day-width: var(--spacing-lg);
+  --rdp-day_button-border-radius: var(--spacing-3xs);
+  --rdp-day_button-height: var(--spacing-lg);
+  --rdp-day_button-width: var(--spacing-lg);
+  --rdp-selected-border: 4px;
+  --rdp-dropdown-gap: var(--spacing-2xs);
+  --rdp-months-gap: var(--spacing-2xs);
+  --rdp-nav_button-height: var(--spacing-lg);
+  --rdp-nav_button-width: var(--spacing-lg);
+  --rdp-nav-height: var(--spacing-lg);
+  --rdp-week_number-height: var(--spacing-lg);
+  --rdd-week_number-width: var(--spacing-lg);
+  --rdp-weekday-padding: var(--spacing-2xs) 0 var(--spacing-2xs) 0;
+
+  border-left: 1px;
+  border-style: solid;
+  border-color: color-mix(in oklab, var(--color-dividers) 20%, transparent);
+  padding-left: var(--spacing-2xs);
+  color: var(--color-text);
+}
+
+.rdp-dropdown > option {
+  background-color: var(--color-foreground);
+  color: var(--color-text);
+  border: 1px solid var(--color-dividers);
+  border-radius: var(--spacing-3xs);
+  padding: var(--spacing-2xs);
+  font-size: var(--text-t);
+  cursor: pointer;
+}
+.rdp-dropdown > option:hover {
+  background-color: pink;
+  color: var(--color-text);
+}
+.rdp-caption_label {
+  padding-left: var(--spacing-3xs);
+  padding-right: var(--spacing-3xs);
+  gap: var(--spacing-3xs);
+}
+
+.rdp-range_start > .rdp-day_button {
+  border-radius: var(--spacing-xs) var(--spacing-3xs) var(--spacing-3xs) var(--spacing-xs);
+}
+.rdp-range_end > .rdp-day_button {
+  border-radius: var(--spacing-3xs) var(--spacing-xs) var(--spacing-xs) var(--spacing-3xs);
+}
+.rdp-range_end.rdp-range_start > .rdp-day_button {
+  border-radius: var(--spacing-3xs) var(--spacing-3xs);
+}
+
+.rdp-months {
+  color: var(--color-text);
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.rdp-month_caption {
+  border: 1px solid color-mix(in oklab, var(--color-dividers) 20%, transparent);
+  border-radius: var(--spacing-2xs);
+  font-size: var(--text-s);
+  justify-content: center;
+}
+.rdp-month_grid {
+  font-size: var(--text-t);
+}
+
+.rdp-weeks {
+  border-radius: var(--spacing-3xs);
+}
+
+.rdp-day.rdp-selected {
+  font-size: var(--text-t);
+}
+
+.rdp-nav {
+  width: 100%;
+  justify-content: space-between;
+}

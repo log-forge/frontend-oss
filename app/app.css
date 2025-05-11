@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import "./brand/theme.css";
+@import "react-day-picker/style.css";
+@import "./components/components library/date range picker/DateRangePicker.styles.css";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html,
+body {
+  @apply bg-background font-mono;
+}
+
+@custom-variant light (&:where([data-theme=light], [data-theme=light] *));
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
