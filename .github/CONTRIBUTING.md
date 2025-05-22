@@ -29,4 +29,4 @@ By submitting a pull request, you agree to the following:
 
 ---
 
-Have questions or want to discuss a feature before coding it? Open an issue or email us at: [your-email@example.com]
+Have questions or want to discuss a feature before coding it? Open an issue or email us at: logforge@gmail.com
